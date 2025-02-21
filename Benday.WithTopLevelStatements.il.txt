@@ -1,0 +1,61 @@
+
+.assembly extern System.Runtime
+{
+  .publickeytoken = ( B0 3F 5F 7F 11 D5 0A 3A ) // .._.....
+  .ver 9:0:0:0
+}
+
+.assembly extern System.Console
+{
+  .publickeytoken = ( B0 3F 5F 7F 11 D5 0A 3A ) // .._.....
+  .ver 9:0:0:0
+}
+
+.assembly 'Benday.WithTopLevelStatements'
+{
+  .custom instance void class [System.Runtime]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(int32) = ( 01 00 08 00 00 00 00 00 ) // ........
+  .custom instance void class [System.Runtime]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78 63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 ) // ....T..WrapNonExceptionThrows.
+  .custom instance void class [System.Runtime]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 18 2E 4E 45 54 43 6F 72 65 41 70 70 2C 56 65 72 73 69 6F 6E 3D 76 39 2E 30 01 00 54 0E 14 46 72 61 6D 65 77 6F 72 6B 44 69 73 70 6C 61 79 4E 61 6D 65 08 2E 4E 45 54 20 39 2E 30 ) // ....NETCoreApp.Version.v9.0..T..FrameworkDisplayName..NET.9.0
+  .custom instance void class [System.Runtime]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 1D 42 65 6E 64 61 79 2E 57 69 74 68 54 6F 70 4C 65 76 65 6C 53 74 61 74 65 6D 65 6E 74 73 00 00 ) // ...Benday.WithTopLevelStatements..
+  .custom instance void class [System.Runtime]System.Reflection.AssemblyConfigurationAttribute::.ctor(string) = ( 01 00 05 44 65 62 75 67 00 00 ) // ...Debug..
+  .custom instance void class [System.Runtime]System.Reflection.AssemblyFileVersionAttribute::.ctor(string) = ( 01 00 07 31 2E 30 2E 30 2E 30 00 00 ) // ...1.0.0.0..
+  .custom instance void class [System.Runtime]System.Reflection.AssemblyInformationalVersionAttribute::.ctor(string) = ( 01 00 2E 31 2E 30 2E 30 2B 30 37 62 64 32 30 66 32 35 65 38 61 63 34 38 66 31 33 39 61 39 39 38 30 39 64 66 38 61 63 36 32 37 65 36 30 34 66 32 33 00 00 ) // ...1.0.0.07bd20f25e8ac48f139a99809df8ac627e604f23..
+  .custom instance void class [System.Runtime]System.Reflection.AssemblyProductAttribute::.ctor(string) = ( 01 00 1D 42 65 6E 64 61 79 2E 57 69 74 68 54 6F 70 4C 65 76 65 6C 53 74 61 74 65 6D 65 6E 74 73 00 00 ) // ...Benday.WithTopLevelStatements..
+  .custom instance void class [System.Runtime]System.Reflection.AssemblyTitleAttribute::.ctor(string) = ( 01 00 1D 42 65 6E 64 61 79 2E 57 69 74 68 54 6F 70 4C 65 76 65 6C 53 74 61 74 65 6D 65 6E 74 73 00 00 ) // ...Benday.WithTopLevelStatements..
+  .hash algorithm 0x00008004
+  .ver 1:0:0:0
+}
+
+.module 'Benday.WithTopLevelStatements.dll'
+// MVID: {4696e13e-ab68-49cb-a4a6-61e643e887eb}
+.imagebase 0x00400000
+.file alignment 0x00000200
+.stackreserve 0x00100000
+.subsystem 0x0003  // WindowsCui
+.corflags 0x00000001  // ILOnly
+
+.class private auto ansi beforefieldinit Program extends [System.Runtime]System.Object
+{
+  .custom instance void class [System.Runtime]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) // ....
+  .method private hidebysig static default void <Main>$(string[] args) cil managed
+  {
+    // Method begins at Relative Virtual Address (RVA) 0x2050
+    .entrypoint
+    // Code size 12 (0xC)
+    .maxstack 8
+    IL_0000: ldstr "Hello, World!"
+    IL_0005: call void class [System.Console]System.Console::WriteLine(string)
+    IL_000a: nop
+    IL_000b: ret
+  } // End of method System.Void Program::<Main>$(System.String[])
+  .method public hidebysig specialname rtspecialname instance default void .ctor() cil managed
+  {
+    // Method begins at Relative Virtual Address (RVA) 0x205D
+    // Code size 8 (0x8)
+    .maxstack 8
+    IL_0000: ldarg.0
+    IL_0001: call instance void class [System.Runtime]System.Object::.ctor()
+    IL_0006: nop
+    IL_0007: ret
+  } // End of method System.Void Program::.ctor()
+} // End of class Program
