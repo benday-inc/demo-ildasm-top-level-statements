@@ -1,4 +1,4 @@
-# How do C# Top-Level Statements Work?: Code Samples
+# How Do C# Top-Level Statements Work?: Code Samples
 
 This is the sample repository for my article on C# top-level statements. 
 
